@@ -1,30 +1,13 @@
-const boxes = document.querySelectorAll('.box')
+// Variable declarations
+var boxes = document.querySelectorAll(".box");
+let boxArr = ["TL", "TM", "TR", "ML", "MM", "MR", "BL", "BM", "BR"];
 
-boxes.forEach(function(box) {
-    box.addEventListener('click', log);
-  });
+// Adds event listener to all boxes
+boxes.forEach(function (box) {
+  box.addEventListener("click", log);
+});
 
-let randomSpotGenerator = {
-    boxArr: ['TL', 'TM', 'TR', 'ML', 'MM', 'MR', 'BL', 'BM', 'BR'],
-    returnRandom: function () {
-      return this.boxArr[Math.floor(Math.random() * this.boxArr.length)]
-    }
-
-  }
-
-let playerTurn = {
-
+// Log function definition
+function log(event) {
+  console.log("Clicked section ID:", event.target.id);
 }
-
-
-let slotLogic = {
-
-}
-
-
-function log(){
-    // console.log(section.id);
-    console.log('Clicked section ID:', event.target.id)
-
-}
-  
