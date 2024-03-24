@@ -1,24 +1,24 @@
 /* Box Model Hack */
 * {
-     box-sizing: border-box;
+  box-sizing: border-box;
 }
-html{
-     font-size: 62.5%;
-     font-family: Poppins;
+html {
+  font-size: 62.5%;
+  font-family: Poppins;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -26,55 +26,58 @@ html{
 /*******************************************/
 
 body {
-     background: darkgray;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
+  background: darkgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-h1, h2 {
-     font-size: 5rem;
+h1,
+h2 {
+  font-size: 5rem;
 }
 h2 {
-     font-size: 3rem;
+  font-size: 3rem;
 }
 i {
-     font-size: 8rem;
-     display: none;
-     
+  font-size: 8rem;
+  display: none;
 }
-.player{
-     display: none;
+.player {
+  display: none;
 }
-.bot{
-     display: none;
+.bot {
+  display: none;
 }
-#container{
-     display: flex;
-     width: 600px;
-     height: 600px;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: wrap;
-     border: solid black;
+#container {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid black;
+}
+.box {
+  display: flex;
+  width: 33.3333%;
+  height: 33.3333%;
+  justify-content: center;
+  align-items: center;
+  border: solid black;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background: pink;
+  border-radius: 10px;
+  font-size: 3rem;
+  margin-top: 25px;
+  display: visible;
+}
 
-}
-.box{
-     display: flex;
-     width: 33.3333%;
-     height: 33.3333%;
-     justify-content: center;
-     align-items: center;
-     border: solid black;
-
-}
-button{
-     padding: 15px;
-     background: pink;
-     border-radius: 10px;
-     font-size: 3rem;
-     margin-top: 25px;
-
+.hidden {
+  visibility: hidden;
 }
 
 /******************************************
